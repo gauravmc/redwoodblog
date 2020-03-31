@@ -2,7 +2,7 @@ import {Link, routes} from '@redwoodjs/router'
 
 const BlogLayout = ({ children }) => {
   return (
-    <div className="rw-scaffold">
+    <div>
       <header>
         <h1>
           <Link to={routes.home()}>Redwood Blog</Link>
@@ -11,6 +11,9 @@ const BlogLayout = ({ children }) => {
           <ul>
             <li>
               <Link to={routes.about()}>About</Link>
+            </li>
+            <li>
+              <Link to={routes.contact()}>Contact</Link>
             </li>
           </ul>
         </nav>
